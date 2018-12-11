@@ -2,7 +2,7 @@
 rm(list=ls())
 
 #load the required libraries
-library(sodium, lib.loc = .libPaths())
+library(sodium)
 library(stringi)
 library(readr)
 
