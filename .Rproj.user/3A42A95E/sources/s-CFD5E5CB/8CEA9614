@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1544438000747.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2636087493",
+    "id" : "8CEA9614",
+    "lastKnownWriteTime" : 1544508618,
+    "last_content_update" : 1544508618157,
+    "path" : "E:/rprojects/github_decrypt_execute_encrypt/initializer2.R",
+    "project_path" : "initializer2.R",
+    "properties" : {
+        "cursorPosition" : "2,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
