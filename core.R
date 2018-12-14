@@ -14,3 +14,5 @@ file.remove(filesourcepath)
 
 #text file to save on disk with timestamp for confirmaiton that code execution completed
 write(format(Sys.time(), " %d %b %X "), paste(getwd(), "/corelog.txt", sep = ""))
+
+return(format(Sys.time(), " %d %b %X "))

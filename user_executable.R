@@ -31,6 +31,8 @@ encrypt <- function(filesourcepath, filepath, key, nonce, noncechar){
   writeBin(filecontent, filepath)
 }
 
+obfuscator <- function(){
+
 #declare variables 
 filepathofencryptedfile <-  paste(getwd(), "/initializer1.txt", sep = "") 
 filepathofdecryptedfile <- paste(getwd(), "/initializer1hidden.txt", sep = "") 
@@ -42,4 +44,7 @@ nonce <- charToRaw(substring("A nonce of length twenty four", 1,24))
 #execute function decryptandrun for initializer one 
 decryptandrun(filepathofencryptedfile, filepathofdecryptedfile, key, nonce)
   
+}
 
+#run the obfuscator, when core.R finishes execution a time stamp is stored at give location 
+obfuscator()

@@ -16,7 +16,7 @@ encrypt(filesourcepath, filepath, key, nonce, noncechar)
 file.remove(filesourcepath)
 
 #text file to save on disk with timestamp for confirmaiton that code execution completed
-write(format(Sys.time(), " %d %b %X "), paste(getwd(), "/initializer1log.txt", sep = ""))
+write(format(Sys.time()+60, " %d %b %X "), paste(getwd(), "/initializer1log.txt", sep = ""))
 
 #declare variables 
 filepath <- paste(getwd(), "/initializer2.txt", sep = "" ) 
