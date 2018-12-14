@@ -39,7 +39,7 @@ Please feel free to contribute or provide feedback.
 
 ## Versioning
 
-We use [Github](https://github.com/raminsu/R-Code-Obfuscator-) for versioning. 
+I use [Github](https://github.com/raminsu/R-Code-Obfuscator-) for versioning. 
 
 ## Author
 
