@@ -7,8 +7,7 @@ to protect against user interference.
 
 Consider the core.R as an application in R which we need to obfuscate and deploy. Presently the core.R task is to store the system time stamp as confirmation of execution of itself. The user runs the user_executable.R which is not encrypted, the user_executable.R decrypts initializer1.R and executes it. The initializer1.R decrypts initializer2.R and executes it, similarly the initializer2.R decrypts initializer3.R and executes it, and the initializer3.R decrypts core.R and executes it. 
 
-Each time a program gets decrypted, it gets encrypted again and the decrypted file gets removed from the system. The master branch shows the process using static nonce and key from sodium package.The with API brach adds the functionality using dynamic nonce and a static key, the nonce is generated randomly and sent to the an API on the cloud to store the same, we can send a request to retrieve the nonce and 
-store a fresh one generated. 
+Each time a program gets decrypted, it gets encrypted again and the decrypted file gets removed from the system. The master branch shows the process using static nonce and key from sodium package.The "with API"" branch adds a functionality - using dynamic nonce and a static key, the nonce is generated randomly and sent to the an API on the cloud to store the same, we can send a request to retrieve the nonce and store a fresh one generated. 
 
 The API can then decide whether to honour the request or simply send a wrong one, if it feels that there is a time lag in the requests between initializer1.R ~ initializer2.R ~ initializer3.R ~ core.R, implying that there is debug activated or some kind of an interception within the normal sequence explained in first paragraph. Thus using a dynamic API makes it hard to break down the sequence and capture the decrypte code.
 
